@@ -78,10 +78,6 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //var photosViewController = segue.destination as! PhotosViewController
-            
-        //photosViewController.image = self.imageView.image
-        
         if let vc = segue.destination as? PhotoDetailsViewController{
             let cell = sender as! UITableViewCell
             let indexPath = photosTableView.indexPath(for: cell)!
